@@ -2,7 +2,7 @@
 
 
 
-screenshot
+screenshot</br>
 ![doctorss](https://user-images.githubusercontent.com/35887583/163670989-24310a5a-55f5-4ef0-b155-d07b237ab282.png)
 
 API link : https://jsonplaceholder.typicode.com/posts
