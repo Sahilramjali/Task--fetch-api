@@ -8,7 +8,7 @@ screenshot</br>
 API link : https://jsonplaceholder.typicode.com/posts
 
 http package is used for http request to fetch json data from the above link.
-Uded listView to display the data which return card widget on this app.
+ ListView is used to display the data which return card widget on this app.
 In card there consist of 3 container and use flexible widget. First container contain the image. Second container contain the data fetched from the aboved mention link and the last container contain the constant data along with button and star.
 
 Package used:
