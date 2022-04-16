@@ -9,6 +9,7 @@ class Appointment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 26, 113, 137),
         title: Text('Appointment page'),
       ),
       body: Center(

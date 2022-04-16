@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'package:demoapp/Model/DemoModel.dart';
-
+import 'package:flutter_svg/svg.dart';
 import '../services/service.dart';
 import 'package:demoapp/common Widgets/widget.dart';
-
 import 'appointment.dart';
 
 class HomePage extends StatefulWidget {
@@ -45,8 +42,21 @@ class _HomePageState extends State<HomePage> {
               height: 130,
               child: AppBar(
                   backgroundColor: const Color.fromARGB(255, 26, 113, 137),
+                  actions: [
+                    GestureDetector(
+                        onTap: () {},
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 15),
+                          child: SvgPicture.asset(
+                            'assets/filter_list.svg',
+                            color: Colors.white,
+                            height: 30,
+                            width: 30,
+                          ),
+                        ))
+                  ],
                   title: const Text(
-                    '       Doctors',
+                    '      Doctors',
                     textAlign: TextAlign.start,
                   ),
                   elevation: 0.0,
@@ -72,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.fromLTRB(
-                          20, 25, 20, 15), //padding of search
+                          40, 25, 40, 15), //padding of search
                       child: Center(
                         child: TextField(
                           controller: _searchController,
